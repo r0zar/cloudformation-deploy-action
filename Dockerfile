@@ -13,7 +13,7 @@ LABEL maintainer="Ross Ragsdale <ross.ragsdale@gmail.com>"
 
 ENV DEBIAN_FRONTEND=noninteractive 
 
-RUN apt-get update && apt-get install -y awscli
+RUN apt-get update && apt-get install -y tzdata && apt-get install -y awscli
 
 ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
