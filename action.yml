@@ -1,5 +1,9 @@
 name: 'SAM Deploy Action'
 description: 'Deploy AWS SAM Stack'
+inputs:
+  BUILD_FLAG:  # id of input
+    description: 'Whether to build image or not'
+    required: true
 branding:
   icon: 'upload-cloud'
   color: 'blue'
